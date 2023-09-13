@@ -43,6 +43,7 @@ const app = express()
 const port = process.env.PORT
 const cors = require('cors')
 app.use(express.json())
+app.use(cors())
 
 // app.use((req,res, next) => {
 //     console.log("I'm a piece of middleware")
